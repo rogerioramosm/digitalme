@@ -1,5 +1,6 @@
 import { Header } from "./components/Header"
 import { Links } from "./components/Links"
+import img from '../public/assets/person.png'
 
 interface Link {
   id: number,
@@ -15,7 +16,7 @@ interface Props {
 
 const person: Props = {
   name: "Mr. Doguinho da Silva Santos",
-  img: "./../public/assets/person.png",
+  img: img,
   link: [
     {
       id: 1,
