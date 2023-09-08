@@ -1,9 +1,10 @@
 import { MyMain } from "./styles"
+import { LinkedinLogo, InstagramLogo, TwitterLogo } from "@phosphor-icons/react";
 
 interface Link {
   id: number,
   link: string,
-  text: string
+  social: string
 }
 
 interface Props {
@@ -15,9 +16,32 @@ export function Links({ link }: Props) {
     <MyMain>
       {
         link.map(line => {
-          return (
-            <a key={line.id} href={line.link} target="_blank">{line.text}</a>
-          )
+          if (line.social === 'LinkedIn') {
+            return (
+              <a key={line.id} href={line.link} target="_blank">
+                <LinkedinLogo size={32} />
+                {line.social}
+              </a>
+            )
+          }
+
+          if (line.social === 'Instagram') {
+            return (
+              <a key={line.id} href={line.link} target="_blank">
+                <InstagramLogo size={32} />
+                {line.social}
+              </a>
+            )
+          }
+
+          if (line.social === 'Twitter') {
+            return (
+              <a key={line.id} href={line.link} target="_blank">
+                <TwitterLogo size={32} />
+                {line.social}
+              </a>
+            )
+          }
         })
       }
     </MyMain>

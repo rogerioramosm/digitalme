@@ -4,7 +4,7 @@ import img from '../public/assets/person.png'
 
 interface Link {
   id: number,
-  text: string,
+  social: string,
   link: string
 }
 
@@ -20,17 +20,17 @@ const person: Props = {
   link: [
     {
       id: 1,
-      text: "LinkedIn",
+      social: "LinkedIn",
       link: "https://linkedin.com"
     },
     {
       id: 2,
-      text: "Instagram",
+      social: "Instagram",
       link: "https://instagram.com"
     },
     {
       id: 3,
-      text: "Twitter",
+      social: "Twitter",
       link: "https://twitter.com"
     },
   ]
