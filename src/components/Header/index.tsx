@@ -1,8 +1,8 @@
-import { MyHeader } from "./styles";
+import { MyHeader } from './styles'
 
 interface Props {
   person: {
-    name: string,
+    name: string
     img: string
   }
 }
